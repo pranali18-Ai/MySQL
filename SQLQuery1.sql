@@ -139,8 +139,34 @@ FROM KiaraMovies;
 
 
 --LIKE
+
+--The following SQL statement selects all customers with a CustomerName starting with "a":
 SELECT * FROM KiaraMovies 
-WHERE Title LIKE 'Sholay%';
+WHERE Title LIKE 'a%';
+
+--The following SQL statement selects all customers with a CustomerName ending with "a":
+SELECT * FROM KiaraMovies 
+WHERE Title LIKE '%a';
+
+--The following SQL statement selects all customers with a CustomerName that have "or" in any position:
+SELECT * FROM KiaraMovies 
+WHERE Title LIKE '%or%';
+
+--The following SQL statement selects all customers with a CustomerName that have "r" in the second position:
+SELECT * FROM KiaraMovies 
+WHERE Title LIKE '_r%';
+
+
+--The following SQL statement selects all customers with a CustomerName that starts with "a" and are at least 3 characters in length:
+SELECT * FROM KiaraMovies 
+WHERE Title LIKE 'a__%';
+
+--The following SQL statement selects all customers with a ContactName that starts with "a" and ends with "o":
+SELECT * FROM KiaraMovies 
+WHERE Title LIKE 'a%o';
+
+
+	
 
 
 
